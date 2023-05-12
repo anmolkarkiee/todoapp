@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#707ECD"
+    android:orientation="vertical"
+    tools:context=".EditTodoFragment">
+
+    <EditText
+        android:id="@+id/edit_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:autofillHints=""
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:hint="@string/edit_Title"
+        android:inputType="textPersonName"
+        android:textColor="@color/yellow_0"
+        />
+
+    <EditText
+        android:id="@+id/edit_txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_margin="10sp"
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:hint="@string/edit_Description"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+
+        android:textColor="@color/yellow_0" />
+
+    <EditText
+        android:id="@+id/edit_txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_margin="10sp"
+        android:autofillHints=""
+        android:background="@drawable/text_background"
+        android:ems="10"
+        android:hint="@string/edit_date"
+        android:inputType="textPersonName"
+        android:textColor="@color/yellow_0"
+        tools:ignore="TextFields" />
+
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="gone"
+        />
+
+    <RadioGroup
+            android:id="@+id/edit_rg_priority"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/edit_rb_high"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:text="high priority"
+                android:textColor="@color/fab_background" />
+
+            <RadioButton
+                android:id="@+id/edit_rb_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:text="medium priority"
+                android:textColor="@color/yellow_500" />
+
+            <RadioButton
+                android:id="@+id/edit_rb_low"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:text="low priority"
+                android:textColor="@color/color_low_priority" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/edit_btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@color/yellow_0"
+                android:text="@string/edit_save"
+                android:textColor="#100F0F"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/edit_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@color/yellow_0"
+                android:text="@string/cancel"
+                android:textColor="#050505"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+
+
+</LinearLayout>
